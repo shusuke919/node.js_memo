@@ -1,0 +1,26 @@
+{
+  "name": "node.js_memo",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shusuke919/node.js_memo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shusuke919/node.js_memo/issues"
+  },
+  "homepage": "https://github.com/shusuke919/node.js_memo#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "request": "^2.88.2"
+  }
+}
