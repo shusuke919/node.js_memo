@@ -2,6 +2,9 @@ import express, { request } from "express";
 //メモのrouterを読み込む
 import { memoRouter } from "./routes/memo.route.js";
 const app = express();
+// 🔽 追加
+import { todoRouter } from "./routes/todo.route.js";
+import { slackRouter } from "./routes/slack.route.js";
 
 // 🔽 追加 POSTでデータを受け取るために必要
 app.use(express.urlencoded({ extended: true }));
@@ -21,6 +24,9 @@ app.get("/", (req, res) => {
 
 
 app.use("/memo", (req, res) => memoRouter(req, res));
+// 🔽 追加
+app.use("/todo", (req, res) => todoRouter(req, res));
+app.use("/slack", (req, res) => slackRouter(req, res));
 
 
 app.listen(port, () => {
